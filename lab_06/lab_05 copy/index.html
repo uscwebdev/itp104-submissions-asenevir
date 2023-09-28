@@ -1,0 +1,154 @@
+<!DOCTYPE html> 
+
+<html>
+
+<head>
+
+<title>Coffee Prefrence Form </title>
+<style>
+body{
+    margin:100px;
+    border: 1px solid black; 
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.form-row{
+			margin:10px 0px; 
+            text-align: center;
+            padding: 10px;
+		}
+
+.left-col{
+			width:200px;
+		}
+</style>
+</head>
+
+<body>
+    
+<div id="main">
+    <h1>Coffee Order Form</h1>
+    <form action="confirmation.html">
+
+    <div class="form-row">
+        <div class="left-col">
+    <label for="name-id">First Name:</label> 
+    </div>
+    <input type="text" id="name-id" placeholder="Tommy">
+</div>
+
+<div class="form-row">
+    <div class="left-col">
+<label for="name-id">Last Name:</label> 
+</div>
+<input type="text" id="name-id" placeholder="Trojan">
+</div>
+
+
+<div class="form-row">
+    <div class="left-col">
+
+    <label for="email-id">Email:</label>
+</div>
+    <input type="email" id="email-id" placeholder="ttrojan@usc.edu">
+</div>
+
+<div class="form-row">
+    <div class="left-col">
+<label for="name-id">Phone:</label> 
+</div>
+<input type="text" id="name-id" placeholder="(123) 123 1234 ">
+</div>
+
+
+<div class="form-row"> <!--can put lists/ paragraphs in the div tags-->
+     What size of coffee would you like? 
+
+    <label>
+    <input type="radio" name="size">
+   Tall 
+   </label> 
+
+<label>
+    <input type="radio" name="size">
+    Grande 
+</label>
+
+<label>
+    <input type="radio" name="size">
+    Venti 
+</label>
+
+</div>
+
+
+<div class="form-row">
+    Type of Coffee:
+    <label>
+        <input type="checkbox">
+         Americana 
+    </label>
+
+    <label>
+        <input type="checkbox">
+         Vanilla Latte 
+    </label>
+
+    <label>
+        <input type="checkbox">
+        Pumpkin spice Latte  
+    </label>
+
+    <label>
+        <input type="checkbox">
+          Caramel Frappuccino 
+    </label>
+
+    <label>
+        <input type="checkbox">
+         Cold Brew 
+    </label>
+
+    <label>
+        <input type="checkbox">
+        Caramel Macchiato 
+    </label>
+</div>
+
+
+<div class="form-row">
+    <label for="select-id">Select:</label> 
+
+    <select id="select-id">
+        <option>Regular</option>
+        <option>Decaffeinated</option>
+        <option>Unsweetened</option>
+    </select>
+</div>
+
+
+<div class="form-row">
+    <label for="msg-id">Message:</label>
+
+    <textarea id="msg-id" placeholder="Hot/cold...other dietary instructions"></textarea>
+</div>
+
+
+<div class="form-row">
+
+    <button type="submit">Submit</button>
+    <button type="reset">Clear</button>
+</div>
+<div class="form-row">
+    <label>
+        <input type="checkbox">
+        I accept terms and condiitons. 
+    </label>
+</div>
+</form>
+</div>
+
+</body>
+
+</html>
