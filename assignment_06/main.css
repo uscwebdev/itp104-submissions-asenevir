@@ -1,0 +1,125 @@
+body{
+    margin:0px;
+}
+
+h1{
+    margin:0px;
+}
+
+#navbar a {
+    text-decoration: none;
+    /*background-color: #FC0;*/
+    /*600px/4 =150px per menue option*/
+    width: 150px;
+    height:50px;
+    line-height: 50px;
+
+    text-align: center;
+
+    display:block;
+
+    color: red;
+
+    border-bottom: 2px solid white;
+
+    
+}
+
+#navbar{
+    display:flex;
+    justify-content: center;
+    box-shadow: 0px 3px 5px #777;
+  
+}
+/*leave no gaps when selecting anchor and hover*/
+/*highlight nav added after with comma to add same properties*/
+#navbar a:hover, #navbar #top-menu{ 
+    color:#900;
+    border-bottom: 2px solid #900;
+}
+
+
+    #navbar ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    
+    }
+    #navbar li {
+        background-color: #900;
+        /* 
+            width of #main 720px;
+            720px / 4 = 180px;
+        */
+        width: 180px;
+        text-align: center;
+        position: relative;
+    }
+
+    #top-menu {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+      
+        
+    }
+
+    #navbar li:hover {
+        background-color: #FC0;
+    }
+
+    #navbar a {
+        color:maroon ;
+        text-decoration: none;
+        display: block;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    #top-menu ul {
+        position: absolute;
+        display: none;
+    }
+
+    #sub-menu ul {
+        top: 0px;
+        left: 180px;
+       
+    }
+
+    #navbar li:hover > ul {
+        display: block;
+    }
+
+   
+    body {
+  
+        padding-top: 0px;
+    }
+        
+    
+
+#main{
+background-color:antiquewhite;
+width: 900px;
+margin-left:auto;
+margin-right: auto;
+margin-right: auto;
+
+
+
+padding:15px;
+}
+
+#footer{
+	background-color: black;
+	text-align:center;
+	color: #FFF;
+	height:50px;
+	line-height:50px;
+    
+  
+    
+}
+
+ 
