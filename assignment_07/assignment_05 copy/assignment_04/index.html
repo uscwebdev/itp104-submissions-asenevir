@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Calendar</title>
+
+<style>
+
+body {
+			margin: 0px;
+            background-color: blanchedalmond;
+		}
+
+#header{
+    background-image:url(december.jpg); 
+    background-size: cover;
+	background-position: center;
+	color:black;
+	font-size: 1.5em;
+	text-align: center;
+	text-shadow: 0px 0px 20px #000;
+	height: 500px;
+	line-height: 500px;
+
+}
+
+#main {
+			width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px;
+            background-color: white;
+		}
+        th{
+			border: 1px solid #ccc;
+			border-bottom: 3px solid #ccc;
+			text-align: center;
+        
+
+        width: 141.71px;
+		padding:10px 0px; 
+		}
+
+		td{
+			border: 1px solid #ccc;
+			text-align:right;
+			width: 141.71px;
+            height:80px;
+			padding: 10px 10px;
+		}
+
+		table{
+			border-collapse: collapse;
+		}
+.shade{
+    color: dimgray;
+}
+
+img{
+    
+   padding: 0px;
+  width: 141.71px;
+    height:80px;
+   
+
+}
+
+.event{
+    text-align: center;
+}
+
+.event-one{
+    color: red;
+    
+}
+</style>
+
+</head>
+
+<body>
+
+    <div id="header">
+		<h1>December 2023</h1>
+	</div> <!-- #header -->
+
+<div id="main">
+
+<!--row by row-->
+<table>
+    <tr>
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="shade">29</td>
+    <td class="shade">30</td>
+    <td>1</td>
+    <td>2</td>
+    </tr>
+    <!--paragraphs images within the closed td tags-->
+
+    <tr>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+
+    <tr>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+        </tr>
+        
+        <tr>
+         <td>17</td>
+         <td class="event-one">18
+            <p class="event">Birthday
+                <img class="birthday" src="birthday.jpeg" alt="birthday"> </p>
+         </td>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+            </tr>
+
+        <tr>
+        <td>24</td>
+        <td class="event-one">25
+            <p class="event" >Christmas day
+             <img class="christmas" src="christmas.jpeg" alt="christmas"></p>
+
+        </td>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+        <td>29</td>
+        <td>30</td>
+        </tr>
+
+        <tr>
+        <td class="event-one">31
+            <p class="event"> New Years Eve
+            <img class="newyear" src="new year.jpeg" alt="new years eve"> </p>
+        </td>
+        <td class="shade">1</td>
+        <td class="shade">2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+            </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+</div> <!--#main -->
+
+
+
+
+</body>
+
+</html>

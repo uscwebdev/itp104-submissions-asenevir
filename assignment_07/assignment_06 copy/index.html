@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Hobbies|Health and Fitness</title>
+
+<link rel="stylesheet" href="main.css">
+
+<style>
+
+
+@font-face {
+			
+			src: url('fonts/Young_Serif/YoungSerif-Regular.ttf');
+		
+			font-family: "Young Serif";
+		}
+
+   
+#header{
+background-color:light blue;
+height: 500px;
+text-align: center;
+line-height: 500px;
+
+background-image: url(img/backimg.webp);
+background-size: cover;
+background-position: center;
+
+color:#FFF;
+text-shadow: 0px 0px 10px #000;
+
+
+font-family: "Young Serif",Serif ;
+font-size: 2.5em;
+font-weight: normal;
+
+
+}
+
+#Healthy-Food{
+    float:right;
+    width:auto;
+    height:300px;
+}
+
+#Physical-Fitness{
+    float:right;
+    width:auto;
+    height:300px;
+}
+
+#Meditation{
+    float:right;
+    width:auto;
+    height:300px;
+}
+
+#wrapper{
+    background-color: white;
+			display:flex;
+			/*cenetring columns in the middle */
+			justify-content:center;
+            width: 1100px;
+            margin-left: auto;
+            margin-right:auto; 
+          padding:10px;
+			border-left: 1px solid#000;
+			border-right: 1px solid #000;;
+
+}
+
+#sidebar{
+			background-color: pink;
+			width:300px;
+			padding:5px;
+			border-right: 1px solid #000;
+
+}
+
+#pictures{ 
+			display:flex;
+			
+            flex-direction: column;
+}
+    .thumbnail{
+			/*
+			width of #main =900px
+			number of images 3 
+			width per image=900/3 =300px
+			*/
+
+			width:250px;
+			height:auto;
+
+			margin: 5px; 
+            margin-top: 5px;
+            margin-top: 5px;
+		
+			
+
+			border: 1px solid black;
+			/*290px-1px left-1px right=288px */
+
+            opacity: 0.7; /*0.7=70% opaque or 30% transparent*/
+		}
+
+		.thumbnail:hover {
+			opacity:1.0;
+		}
+
+		.img-container > p {
+			text-align: center; 
+			/*display: none; - creates a jump effect on the page - maybe on a FAQ section use display none*/
+			visibility: hidden;
+		}
+/*thumbnail hovering over the sibling parapgrah*/
+		.thumbnail:hover + p {
+			/*display:block; - creates a jump effect on the page*/
+			visibility: visible;
+		}
+
+			
+		
+
+
+</style>
+
+</head>
+
+
+<body>
+<div id="header">
+<h1>Health and Fitness</h1>
+</div>
+
+<div id="navbar">
+
+    <a id="top-menu" href="index.html">Home</a>
+    
+    <ul id="sub-menu">
+        <li><a href="">Nutrition</a></li>
+        <li><a href="">Physical Fitness</a></li>
+        <li><a href="">Mindfulness</a> </li>
+    </ul>
+                        
+
+    <a  href="gallery.html">Gallery</a>
+
+    
+		
+   
+
+</div> <!--navbar-->
+
+<div id="wrapper">
+    <div id="main">
+        <h2>Nutrition</h2>
+        <img id="Healthy-Food" src="img/healthy_food.jpg.webp" alt="Healthy Diet">
+        <p>Practicing healthy nutrition is a conscious and empowering choice that has a profound impact on my well-being. It's a lifestyle that prioritizes the nourishment of the body with wholesome and nutrient-rich foods.</p>
+        <p>This means making mindful selections when planning meals, opting for fresh fruits and vegetables, lean proteins, whole grains, and healthy fats. Portion control is essential to maintain a balanced intake of calories, and staying hydrated with plenty of water is equally crucial.</p>
+        <p>Healthy nutrition isn't just about what we eat but also how we eat; it encourages mindful eating, savoring each bite, and listening to our body's hunger and fullness cues. By consistently practicing healthy nutrition, we support our physical health, boost our energy levels, enhance our mental clarity, and reduce the risk of chronic diseases. Ultimately, it's an investment in ourselves, fostering vitality and longevity while promoting a better quality of life.</p>
+
+        <h2>Physical Fitness</h2>
+        <img id="Physical-Fitness" src="img/150-minutes.png" alt="Physcial Fitness">
+        <p>Engaging in regular physical fitness activities is a cornerstone of maintaining good health. These activities encompass a wide range of exercises and movements that promote physical strength, flexibility, cardiovascular endurance, and overall well-being.</p>
+        <p>Activities such as brisk walking, jogging, cycling, and swimming are excellent for improving cardiovascular health and increasing stamina. Strength training exercises, like weightlifting or bodyweight exercises, help build muscle mass and bone density, contributing to a stronger, more resilient body. Yoga and stretching routines enhance flexibility, balance, and reduce the risk of injury. Group fitness classes, such as dance, aerobics, or martial arts, not only provide physical benefits but also promote social interaction and mental well-being.</p>
+        <p>Regular physical activity releases endorphins, reducing stress and anxiety while improving mood and cognitive function. In summary, incorporating a variety of physical fitness activities into our lives is a proactive step towards a healthier, happier, and more vibrant future.</p>
+
+        <h2>Mindfulness Meditation</h2>
+        <img id="Meditation" src="img/meditation copy.jpeg" alt="meditation">
+        <p>Mindfulness meditation is a transformative practice that cultivates awareness, presence, and inner peace. It involves focusing one's attention on the present moment, observing thoughts, feelings, and sensations without judgment. By anchoring our awareness in the here and now, we can detach from the chaos of the mind and external distractions, allowing us to fully engage with our inner selves. Through consistent mindfulness meditation, individuals can experience a deep sense of clarity and calm.</p>
+        <p> It's a powerful tool for managing stress, anxiety, and emotional turmoil, as it helps us respond to life's challenges with greater equanimity.</p>
+        <p>More information available at<a target="_blank" href="https://www.mindful.org/meditation/mindfulness-getting-started/"> Mindfulness Meditation.</a> </p>
+
+
+    </div> 
+
+    <div id="sidebar">
+        <div id="pictures">
+            <div class="img-container">
+            <img class="thumbnail" src="img/healthy life.jpg .jpeg" alt="exercise">
+            <p>Exercise</p>
+            </div>
+
+            <div class="img-container">
+            <img class="thumbnail" src="img/healthy nurition.jpg" alt="nutriiton">
+            <p>Nutrition</p>
+            </div>
+
+            <div class="img-container">
+            <img class="thumbnail" src="img/mental health.jpg" alt="mental health">
+            <p>Mental Health</p>
+            </div>
+
+            <div class="img-container">
+            <img class="thumbnail" src="img/activity.jpg" alt="exercise">
+            <p>Workout</p>
+            </div>
+
+            <div class="img-container">
+            <img class="thumbnail" src="img/food.jpg" alt="nutrition">
+            <p>Healthy Food</p>
+            </div>
+
+            <div class="img-container">
+            <img class="thumbnail" src="img/mind.jpg" alt="mental health">
+            <p>Mindfulness</p>
+            </div>
+
+            <div class="img-container">
+            <img class="thumbnail" src="img/workout.jpg" alt="exercise">
+            <p>Physical Activity</p>
+            </div>
+
+            <div class="img-container">
+            <img class="thumbnail" src="img/eat.jpg" alt="nutriiton">
+            <p>Nourishment</p>
+            </div>
+
+            <div class="img-container">
+            <img class="thumbnail" src="img/mindful.jpg" alt="mental health">
+            <p>Mental Wellbeing</p>
+            </div>
+
+        </div> <!--pictures closed -->
+    </div>  <!-- #sidebar -->
+
+
+</div> <!--wrapper closed -->
+
+<div id="footer">
+    University of Southern California &copy; 2018
+</div>
+
+
+</body>
+
+</html>
