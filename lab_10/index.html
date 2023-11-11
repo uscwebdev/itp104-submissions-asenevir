@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>CSS Effects and Transitions</title>
+
+    <style>
+
+body {
+    margin: 10px;
+}
+
+#main {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+#parent-container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+img{
+    width: 200px;
+    height: auto;
+}
+
+.img-1{
+    position:relative;
+    top: 80px;
+    left: 140px;
+    box-shadow: 5px 5px 5px grey;
+    transition: all 1s;
+
+}
+
+.img-2{
+    position:relative;
+    top: 80px;
+    box-shadow: 5px 5px 5px grey;
+    transition: all 1s;
+}
+
+.img-3{
+    position:relative;
+    top: 80px;
+    right:140px;
+    box-shadow: 5px 5px 5px grey;
+    transition: all 1s;
+}
+
+#parent-container:hover .container:nth-child(1){
+    transform:translateX(-5px) rotate(90deg);
+    transition: all 1s;
+}
+
+#parent-container:hover .container:nth-child(2){
+    transform:translateX(5px) rotate(45deg);
+    transition: all 1s;
+}
+
+#parent-container:hover .container:nth-child(3){
+    transform:translateX(5px) rotate(-45deg);
+    transition: all 1s;
+}
+
+
+    </style>
+</head>
+
+<body>
+<div id="main">
+
+    <div id="parent-container">
+        <div class="container">
+        <img class="img-1" src="effieltower.jpeg" alt="Effiel Tower">
+    </div>
+
+    <div class="container">
+        <img class="img-2" src="colosseum.jpeg" alt="Colosseum">
+    </div>
+    
+    <div class="container">
+        <img class="img-3" src="tajmahal.jpeg" alt="Taj Mahal"> 
+    </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
