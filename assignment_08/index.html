@@ -8,12 +8,6 @@
 
 <style>
 
-    
-
-    .hero-img{
-
-    }
-
     ul li{
         list-style-type: none;
         margin-left: -40px;
@@ -48,25 +42,48 @@
 
 #navbar ul li{
     margin-right: 100px;
+    margin-top: 20px;
 
 }
 
 #navbar .drop-down li{
-background-color: antiquewhite;
+background-color:cornsilk;
 }
 
 
 
 #footer{
-    background-color: #777;
+    background-color:seagreen;
     color: aliceblue;
     width: auto;
-    height: 400px;
-    
-
+    height: 200px;
+    padding-top:20px;
+    padding-left:50px;
+    padding-right: 20px;
+   
 }
 
+#head-office{
+    position: absolute;
+    left:500px;
+    
+}
 
+#villa{
+    position:absolute;
+    bottom: 30px;
+    left:900px;
+}
+
+#contact{
+    position: absolute;
+    bottom:30px;
+    left: 300px;
+}
+h1{
+    color:black;
+    
+}
 
 </style>
 
@@ -74,39 +91,44 @@ background-color: antiquewhite;
 
 <body>
     
-
-
-
     <div id="navbar">
         
 <ul>
     <li><h1>Craigbank Nuwaraeliya</h1></li>
    <li class="drop-down"><a href="index.html"></a>
    <ul>
-    <li><a href="index.html">Home</a></li>
-  <li><a  href="overview.html">Overview</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a target="_blank" href="index.html">Home</a></li>
+  <li><a target="_blank" href="overview.html">Overview</a></li>
+  <li> <a target="_blank" href="suites.html">Suites</a></li>
+    <li><a target="_blank" href="gallery.html">Gallery</a></li>
+    <li><a target="_blank" href="contact.html">Contact</a></li>
 </ul></li>
 </ul>
 </div>
 
-<div class="hero-img">
-   
-</div>
 
     <div id="footer">
-<h4>Head Office </h5>
+<div id="head-office">
+<h4>Head Office </h4>
 <p>34/1 castle Street</p>
 <p>Colombo 08</p>
 <p>Contact no. 0112 667 704</p>
+</div>
 
-<h4>Villa Adress</h5>
+<div id="villa">
+<h4>Villa Adress</h4>
 <p>No.48, Waterfield Drive</p>
 <p>Nuwaraeliya, Sri Lanka</p>
+</div>
 
-<h4>Contact US</h5>
-<p>email:craigbanknuwaraeliya@gmail.com.com</p>
-    </div>
+<div id="contact"></div>
+<h4>Contact US</h4>
+<p>Email:<a href="mailto:craigbanknuwaraeliya@gmail.com">craigbanknuwaraeliya@gmail.com</a></p>
+<p>Contact no. +1 (818) 930 4752 (watsapp)</p>
+
+</div>
+
+
+    
 </body>
 </html>
