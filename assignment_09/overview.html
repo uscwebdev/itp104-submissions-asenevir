@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Overview: Craigbank Nuwaraeliya</title>
+
+<style>
+ul li{
+        list-style-type: none;
+        margin-left: -40px;
+    }
+
+    #navbar a {
+    text-decoration: none;
+    /*background-color: #FC0;*/
+    /*600px/4 =150px per menue option*/
+    width: 100px;
+    height:50px;
+    line-height: 50px;
+
+    text-align: center;
+
+    display:block;
+
+    color: #777;
+
+    border-bottom: 2px solid #FFF;
+}
+
+#navbar{
+    display:flex;
+    justify-content: left;
+    box-shadow: 0px 3px 5px #777;
+    background-image: url(craigbank.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+
+
+#navbar .drop-down li{
+background-color:cornsilk;
+}
+
+
+
+
+
+#footer{
+    background-color:seagreen;
+    color: aliceblue;
+    width: auto;
+    height: 500px;
+    padding-top:20px;
+    padding-left:50px;
+    padding-right: 20px;
+   
+}
+
+#about-us{
+    display: flex;
+    width:320px;
+    height: 200px;
+    background-color:lightslategray;
+    margin: 10px;
+    padding:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <div id="navbar">
+        
+        <ul>
+            <li><h1>Craigbank Nuwaraeliya</h1></li>
+           <li class="drop-down"><a href="index.html"></a>
+           <ul>
+            <li><a target="_blank" href="index.html">Home</a></li>
+          <li><a target="_blank" href="overview.html">Overview</a>
+            <ul id="sub-menu">
+                <li><a target="_blank" href="aboutus.html">About US</a></li>
+                <li>
+                    <a target="_blank" href="location.html">Location</a>
+                    </li> </ul>
+                </li>
+          <li> <a target="_blank" href="suites.html">Suites</a></li>
+            <li><a target="_blank" href="gallery.html">Gallery</a></li>
+            <li><a target="_blank" href="contact.html">Contact</a></li>
+        </ul></li>
+        </ul>
+        </div>
+        
+        
+     <div id="footer">
+
+        <div id="about-us">
+            <p>About US</p>
+            <p><a target="_blank" href="aboutus.html">Discover More</a></p>
+        </div>
+
+                </div> 
+
+</body>
+
+</html>

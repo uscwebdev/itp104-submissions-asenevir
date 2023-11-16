@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+
+<html>
+
+<head>
+
+<title>Effiel Tower Puzzle</title>
+
+<style>
+
+body {
+    margin: 10px;
+}
+h1 {
+    margin: 0px;
+    text-align: center;
+}
+
+#main {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+
+
+.img-container{
+    display: flex;
+    flex-wrap: wrap;
+    /*width: 200px;
+    height: auto;*/
+}
+
+img{
+    width: 200px;
+    height: auto;
+}
+
+.img-1{
+        position: relative;
+        top:10px;
+        right:20px;
+        box-shadow: 10px 5px 5px grey;
+    }
+
+.img-3{
+        position: relative;
+        left: 15px;
+        top:50px;
+        box-shadow: 10px 5px 5px grey;
+      
+    }
+
+.img-4{
+        position: relative;
+        left: 15px;
+        top:30px;
+        box-shadow: 0px 5px 5px grey;
+      
+    }
+
+.draggable{
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <h1>Effiel Tower Puzzle</h1>
+
+    <div id="main">
+
+    <div id="thumbnails">
+
+        <div class="img-container">
+
+        <img class="img-1 draggable" src="PineTools.com_files/row-1-column-1.jpg" alt="Effiel tower 1">
+    
+        <img class="img-2  draggable" src="PineTools.com_files/row-1-column-2.jpg" alt="Effiel tower 2 ">
+
+        <img class="img-3 draggable" src="PineTools.com_files/row-1-column-3.jpg" alt="Effiel tower 3">
+
+        <img class="img-4 draggable"  src="PineTools.com_files/row-2-column-1.jpg" alt="Effiel tower 4">
+
+        <img class="img-5 draggable" src="PineTools.com_files/row-2-column-2.jpg" alt="Effiel tower 5">
+
+        <img class="img-6 draggable" src="PineTools.com_files/row-2-column-3.jpg" alt="Effiel tower 6">
+
+
+    </div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="dist/draggabilly.pkgd.min.js"></script>
+
+<script>
+    var $draggable = $('.draggable').draggabilly({
+  
+})
+</script>
+</body>
+
+</html>
+
