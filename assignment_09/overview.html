@@ -7,43 +7,66 @@
 <title>Overview: Craigbank Nuwaraeliya</title>
 
 <style>
-ul li{
-        list-style-type: none;
-        margin-left: -40px;
-    }
+ul li {
+            list-style-type: none;
+            margin-left: -40px;
+        }
 
-    #navbar a {
-    text-decoration: none;
-    /*background-color: #FC0;*/
-    /*600px/4 =150px per menue option*/
-    width: 100px;
-    height:50px;
-    line-height: 50px;
+        #navbar a {
+            text-decoration: none;
+            /*background-color: #FC0;*/
+            /*600px/4 =150px per menue option*/
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
 
-    text-align: center;
+            text-align: center;
 
-    display:block;
+            display: block;
 
-    color: #777;
+            color: #777;
 
-    border-bottom: 2px solid #FFF;
-}
+            border-bottom: 2px solid #FFF;
+        }
 
-#navbar{
-    display:flex;
-    justify-content: left;
-    box-shadow: 0px 3px 5px #777;
-    background-image: url(craigbank.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-}
+        #navbar {
+            display: flex;
+            justify-content: left;
+            box-shadow: 0px 3px 5px #777;
+            background-image: url(craigbank.jpeg);
+            background-size: cover;
+            background-position: center;
+            height: 550px;
+        }
+
+        #navbar ul li {
+            margin-right: 100px;
+            margin-top: 20px;
+
+        }
+
+        h1 {
+            color: black;
+
+        }
+
+        .dropdown .sub-menu {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            background-color: cornsilk;
+            box-shadow: 0px 8px 16px 0px (0,0,0,0,0.2);
+        }
+
+        .dropdown:hover .sub-menu {
+            display: block;
+        }
+
+        .main{
+            background-color: white;
+        }
 
 
-
-#navbar .drop-down li{
-background-color:cornsilk;
-}
 
 
 
@@ -60,14 +83,50 @@ background-color:cornsilk;
    
 }
 
+
 #about-us{
     display: flex;
+    flex-direction: column;
     width:320px;
     height: 200px;
     background-color:lightslategray;
-    margin: 10px;
-    padding:10px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration:solid;
+    position:absolute;
+    top: 650px;
+    border: 3px solid #ccc;
+       
 }
+
+#location{
+    display: flex;
+    flex-direction: column;
+    width:320px;
+    height: 200px;
+    background-color:lightslategray;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration:solid;
+    margin:3px;
+    border: 3px solid #ccc;
+
+    position: absolute;
+    top: 650px;
+   left:440px;
+;
+
+ 
+       
+}
+
+
+
+
+
+
 
 </style>
 
@@ -76,33 +135,43 @@ background-color:cornsilk;
 <body>
 
     <div id="navbar">
-        
+
         <ul>
-            <li><h1>Craigbank Nuwaraeliya</h1></li>
-           <li class="drop-down"><a href="index.html"></a>
-           <ul>
-            <li><a target="_blank" href="index.html">Home</a></li>
-          <li><a target="_blank" href="overview.html">Overview</a>
-            <ul id="sub-menu">
-                <li><a target="_blank" href="aboutus.html">About US</a></li>
-                <li>
-                    <a target="_blank" href="location.html">Location</a>
-                    </li> </ul>
-                </li>
-          <li> <a target="_blank" href="suites.html">Suites</a></li>
-            <li><a target="_blank" href="gallery.html">Gallery</a></li>
-            <li><a target="_blank" href="contact.html">Contact</a></li>
-        </ul></li>
+            <li>
+                <h1>Craigbank Nuwaraeliya</h1>
+            </li>
+            <li><a target="_blank" href="index.html" class="main">Home</a></li>
+            <li class="dropdown">
+                <a target="_blank" href="overview.html" class="main">Overview</a>
+                <ul class="sub-menu">
+                    <li><a target="_blank" href="aboutus.html">About Us</a></li>
+                    <li>
+                        <a target="_blank" href="location.html">Location</a>
+                    </li>
+                </ul>
+            </li>
+            <li> <a target="_blank" href="suites.html" class="main">Suites</a></li>
+            <li><a target="_blank" href="gallery.html" class="main">Gallery</a></li>
+            <li><a target="_blank" href="contact.html" class="main">Contact</a></li>
         </ul>
-        </div>
-        
+    </div>
+
         
      <div id="footer">
 
         <div id="about-us">
-            <p>About US</p>
+            <h2><p>ABOUT US</p></h2>
             <p><a target="_blank" href="aboutus.html">Discover More</a></p>
+            
         </div>
+
+  
+        <div id="location">
+            <h2><p>LOCATION</p></h2>
+            <p><a target="_blank" href="location.html">Discover More</a></p>
+            
+      </div>
+    
 
                 </div> 
 
