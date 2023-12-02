@@ -8,13 +8,64 @@
 
 <style>
 body{
+    width: 1100px;
     background-color: seagreen;
     padding-left: 50px;;
     padding-top: 40px;;
+    
 }
+ul li {
+            list-style-type: none;
+            margin-left: -40px;
+        }
+
+        #navbar a {
+            text-decoration: none;
+            /*background-color: #FC0;*/
+            /*600px/4 =150px per menue option*/
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+
+            text-align: center;
+
+            display: block;
+
+            color: #777;
+
+            border-bottom: 2px solid #FFF;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: left;
+            box-shadow: 0px 3px 5px #777;      
+        }
+
+        #navbar ul li {
+            margin-right: 100px;
+            margin-top: 20px;
+        }
+
+        .dropdown .sub-menu {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            background-color: cornsilk;
+            box-shadow: 0px 8px 16px 0px (0,0,0,0,0.2);
+        }
+
+        .dropdown:hover .sub-menu {
+            display: block;
+        }
+
+        .main{
+            background-color: white;
+        }
 
 h1{
     color: white;
+    text-align: center;
 
 }
 #main{
@@ -24,10 +75,7 @@ width: 250px;
 height:auto;
 position: absolute;
 top:200px;
-left:150px;
-
-
-           
+left:150px;           
 }
 
 #container{
@@ -36,25 +84,53 @@ flex-direction: row;
 width: 250px;
 height:auto;
 position: absolute;  
-left:600px;  
-top:165px;  
-color: white;    
+left:850px;  
+top:205px;  
+color: white;  
+text-align: center;  
 }
 
 #box{
     background-color: antiquewhite;
 }
-    
 
+.map{
+    width: 400px;
+    height:auto;
+    position:absolute;
+    left:200px;  
+}
 </style>
 
 </head>
 
 <body>
-    <h1>Location</h1>
+    
+    <div id="navbar">
+
+        <ul>
+            <li>
+                <h1>Location</h1>
+            </li>
+            <li><a target="_blank" href="index.html" class="main">Home</a></li>
+            <li class="dropdown">
+                <a target="_blank" href="overview.html" class="main">Overview</a>
+                <ul class="sub-menu">
+                    <li><a target="_blank" href="aboutus.html">About Us</a></li>
+                    <li>
+                        <a target="_blank" href="location.html">Location</a>
+                    </li>
+                </ul>
+            </li>
+            <li> <a target="_blank" href="suites.html" class="main">Suites</a></li>
+            <li><a target="_blank" href="gallery.html" class="main">Gallery</a></li>
+            <li><a target="_blank" href="contact.html" class="main">Contact</a></li>
+        </ul>
+    </div>
+
     <div id="box">
 <div id="main">
-<img src="map.jpeg" alt="location Nuwaraeliya">
+<img class="map" src="map.jpeg" alt="location Nuwaraeliya">
 </div>
 
 <div id="container">
